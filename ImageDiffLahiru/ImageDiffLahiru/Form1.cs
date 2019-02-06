@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using System.IO;
+using WebPWrapper;
 
 namespace ImageDiffLahiru
 {
@@ -14,6 +16,8 @@ namespace ImageDiffLahiru
     {
 
         ScreenCapture sc = new ScreenCapture();
+        Image img;
+        byte[] imageBytes;
 
         public Form1()
         {
@@ -22,9 +26,35 @@ namespace ImageDiffLahiru
 
         private void imgCapture_Click(object sender, EventArgs e)
         {
-            Image img = sc.CaptureScreen();
+            img = sc.CaptureScreen();
             this.imageDisplay.Image = img;
             sc.CaptureWindowToFile(this.Handle, "D:\\temp.Jpeg", ImageFormat.Jpeg);
         }
+
+        private byte[] ImageToByteArray(System.Drawing.Image imageIn)
+        {
+            using (var ms = new MemoryStream())
+            {
+                imageIn.Save(ms, imageIn.RawFormat);
+                return ms.ToArray();
+            }
+        }
+
+        private void saveWebp_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap("D:\\temp.Jpeg");
+            //using (WebP webp = new WebP())
+                //webp.Save(bmp, 80, "test.webp");
+            //int re = 75;
+
+            byte[] rawWebP = File.ReadAllBytes("D:\\temp.Jpeg");
+            using (WebP webp = new WebP())
+                rawWebP = webp.EncodeLossy(bmp, 75);
+            File.WriteAllBytes("D:\\WebPimage.webp", rawWebP);
+
+            //imageBytes = ImageToByteArray(img);
+
+        }
+
     }
 }

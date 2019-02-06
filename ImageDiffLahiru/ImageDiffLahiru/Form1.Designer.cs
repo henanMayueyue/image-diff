@@ -30,6 +30,7 @@
         {
             this.imgCapture = new System.Windows.Forms.Button();
             this.imageDisplay = new System.Windows.Forms.PictureBox();
+            this.saveWebp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,15 +49,26 @@
             this.imageDisplay.Location = new System.Drawing.Point(12, 12);
             this.imageDisplay.Name = "imageDisplay";
             this.imageDisplay.Size = new System.Drawing.Size(541, 324);
-            this.imageDisplay.TabIndex = 1;
             this.imageDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageDisplay.TabIndex = 1;
             this.imageDisplay.TabStop = false;
+            // 
+            // saveWebp
+            // 
+            this.saveWebp.Location = new System.Drawing.Point(586, 67);
+            this.saveWebp.Name = "saveWebp";
+            this.saveWebp.Size = new System.Drawing.Size(75, 23);
+            this.saveWebp.TabIndex = 2;
+            this.saveWebp.Text = "Save";
+            this.saveWebp.UseVisualStyleBackColor = true;
+            this.saveWebp.Click += new System.EventHandler(this.saveWebp_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 348);
+            this.Controls.Add(this.saveWebp);
             this.Controls.Add(this.imageDisplay);
             this.Controls.Add(this.imgCapture);
             this.Name = "Form1";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button imgCapture;
         private System.Windows.Forms.PictureBox imageDisplay;
+        private System.Windows.Forms.Button saveWebp;
     }
 }
 

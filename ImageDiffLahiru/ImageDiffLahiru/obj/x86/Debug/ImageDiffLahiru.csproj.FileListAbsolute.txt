@@ -7,3 +7,11 @@ c:\users\dell\documents\visual studio 2010\Projects\ImageDiffLahiru\ImageDiffLah
 c:\users\dell\documents\visual studio 2010\Projects\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.exe
 c:\users\dell\documents\visual studio 2010\Projects\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.pdb
 C:\Users\Dell\Documents\Visual Studio 2010\Projects\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.csprojResolveAssemblyReference.cache
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\bin\Debug\ImageDiffLahiru.exe.config
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.exe
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.pdb
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\bin\Debug\ImageDiffLahiru.exe
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\bin\Debug\ImageDiffLahiru.pdb
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.Form1.resources
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.Properties.Resources.resources
+D:\Proj\image-diff\ImageDiffLahiru\ImageDiffLahiru\obj\x86\Debug\ImageDiffLahiru.csproj.GenerateResource.Cache
